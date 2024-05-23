@@ -1,5 +1,6 @@
 "use client";
 
+import { ModeToggle } from "@/components/ToggleThemeButton";
 import {
   LoginLink,
   LogoutLink,
@@ -7,7 +8,6 @@ import {
 } from "@kinde-oss/kinde-auth-nextjs";
 import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 import Link from "next/link";
-import { ModeToggle } from "./ToggleThemeButton";
 
 const navLinks = [
   { name: "Dashboard", href: "/" },
@@ -19,7 +19,10 @@ export default function Navbar() {
   return (
     <div className='bg-background  border-b'>
       <div className='container max-w-[1024px] mx-auto text-black flex justify-between items-center h-[10vh]'>
-        <Link href={"/"} className='text-3xl font-bold text-white'>
+        <Link
+          href={"/"}
+          className='text-3xl font-bold text-black dark:text-white'
+        >
           Racine14 <span className='text-blue-500'>Creator</span>
         </Link>
         <div className='lg:flex hidden'>
