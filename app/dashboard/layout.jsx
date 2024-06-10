@@ -60,6 +60,8 @@ export default function DashboardLayout({ children }) {
   }
 
   return (
-    <div className='container max-w-[1024px] mx-auto py-3'>{children}</div>
+    <div className='container max-w-[1024px] mx-auto  border-r border-l'>
+      {children}
+    </div>
   );
 }

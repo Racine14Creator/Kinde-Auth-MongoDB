@@ -13,7 +13,7 @@ export default function IndexPage() {
 
   // Check if the user is Authenticated
   if (isLoggenIn) {
-    redirect("/dasboard");
+    redirect("/dashboard");
   }
 
   return (
