@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const navLinks = [
   { name: "Dashboard", href: "/" },
-  { name: "Profile", href: "/dashoard/profile" },
+  { name: "Profile", href: "/dashboard/profile" },
   { name: "Tracker", href: "/dashboard/tracker" },
 ];
 export default function Navbar() {
