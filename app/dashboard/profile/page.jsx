@@ -8,7 +8,7 @@ export default function page() {
   const { user } = useKindeBrowserClient();
   // console.log(user);
   return (
-    <div className='h-screen border-x p-5 -m-3'>
+    <div className='h-screen p-5 -m-3'>
       <div className='flex justify-between items-center'>
         <h3>
           Profile /{" "}
